@@ -1,0 +1,89 @@
+/* Fonts */
+@import url(./fonts.css);
+
+/* Box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-family: inherit;
+  display: block;
+}
+
+button {
+  display: block;
+  padding: 0;
+
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+/* Variables*/
+
+:root {
+  /* Color */
+
+  --grey: #808080;
+  --dark-grey: #434455;
+  --white: #fff;
+  --dairy: #fcfcfc;
+  --cloud: #f4f4fd;
+  --black: #000;
+  --blue: #4e75ff;
+  --ligth-blue: #6c8cff;
+
+  /* Transition*/
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+/* ------------BASE STYLES------------ */
+
+body {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #1b1b1b;
+  background-color: var(--cloud);
+}
