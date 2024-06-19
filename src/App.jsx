@@ -1,11 +1,10 @@
 import './App.css';
 
-// import huks
 import { useEffect, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 // import function request from api https://api.unsplash.com
 import { requestImageByQuery } from './services/api';
-
-import toast, { Toaster } from 'react-hot-toast';
 
 // import components
 import SearchBar from './components/SearchBar/SearchBar';
@@ -74,12 +73,7 @@ const App = () => {
   }, [searchQuery, currentPage, perPage]);
 
   useEffect(() => {
-    // window.scrollBy page scroll
-    window.scrollBy({
-      top: 300,
-      left: 0,
-      behavior: 'smooth',
-    });
+    window.scrollBy(0, 300);
   }, [currentPage]);
 
   // callback function for SearchQuery

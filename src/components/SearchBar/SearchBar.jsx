@@ -3,7 +3,7 @@ import css from './SearchBar.module.css';
 // import library Formik
 import { Formik, Form, Field } from 'formik';
 // import toast library for notification when the form is empty
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 // import react icons
 import { CiSearch } from 'react-icons/ci';
 
